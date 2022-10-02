@@ -56,7 +56,7 @@ def hangman():
 
         elif user_letter in used_letters:
             print('\nYou have already used that letter. Guess another letter.')
-
+            lives = lives - 1 #take away a life for guessing same letter over and over again
         else:
             print('\nThat is not a valid letter.')
 
